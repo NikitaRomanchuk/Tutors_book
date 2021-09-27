@@ -3,7 +3,6 @@ package com.example.tutorsnotebook.views.activities
 import android.content.Intent
 import android.os.Build
 import android.os.Bundle
-import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
@@ -29,8 +28,8 @@ class AuthActivity : AppCompatActivity() {
         }
 
         initAuthButton()
-        initTutorButton()
-        initStudentButton()
+//        initTutorButton()
+//        initStudentButton()
     }
 
 
@@ -63,25 +62,25 @@ class AuthActivity : AppCompatActivity() {
         }
     }
 
-    private fun initTutorButton() {
-        val tutorButton = findViewById<Button>(R.id.auth_button_tutor)
-        tutorButton.setOnClickListener {
-            val data = "optional data"
-            val intent = Intent(this, MainActivity::class.java).apply {
-                putExtra("key", data)
-            }
-            startActivity(intent)
-        }
-    }
-
-    private fun initStudentButton() {
-        val studentButton = findViewById<Button>(R.id.auth_button_student)
-        studentButton.setOnClickListener {
-            val data = "optional data"
-            val intent = Intent(this, StudentActivity::class.java).apply {
-                putExtra("key", data)
-            }
-            startActivity(intent)
-        }
-    }
+//    private fun initTutorButton() {
+//        val tutorButton = findViewById<Button>(R.id.auth_button_tutor)
+//        tutorButton.setOnClickListener {
+//            val data = "optional data"
+//            val intent = Intent(this, MainActivity::class.java).apply {
+//                putExtra("key", data)
+//            }
+//            startActivity(intent)
+//        }
+//    }
+//
+//    private fun initStudentButton() {
+//        val studentButton = findViewById<Button>(R.id.auth_button_student)
+//        studentButton.setOnClickListener {
+//            val data = "optional data"
+//            val intent = Intent(this, StudentActivity::class.java).apply {
+//                putExtra("key", data)
+//            }
+//            startActivity(intent)
+//        }
+//    }
 }
